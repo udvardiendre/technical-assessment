@@ -7,35 +7,432 @@
     <link rel="stylesheet" href="/assets/styles/main.css" />
   </head>
   <body>
-    <nav>
-      <div class="flex-row-justify-between">
+    <nav class="nav-parent">
+      <div class="container nav-inner-parent">
         <div class="logo-nav logo-nav-mobile">
           <img src="/assets/icons/logo_icon.svg" alt="furniro-logo" />
           <h1>Furniro</h1>
         </div>
-        <ul class="flex-row-justify-between">
-          <li><button>Home</button></li>
-          <li><button>Shop</button></li>
-          <li><button>About</button></li>
-          <li><button>Contact</button></li>
+        <ul class="navigation">
+          <li>Home</li>
+          <li>Shop</li>
+          <li>About</li>
+          <li>Contact</li>
         </ul>
-        <div>
-          <ul class="flex-row-justify-between">
-            <li><button><img src="/assets/icons/profile_icon.svg" alt="profile-logo" /></button></li>
-            <li><button><img src="/assets/icons/search_icon.svg" alt="search-logo" /></button></li>
-            <li><button><img src="/assets/icons/heart_icon.svg" alt="heart-logo" /></button></li>
-            <li><button><img src="/assets/icons/cart_icon.svg" alt="cart-icon" /></button></li>
-          </ul>
-        </div>
+        <ul class="navigation-icons">
+          <li>
+            <img src="/assets/icons/profile_icon.svg" alt="profile-logo" />
+          </li>
+          <li>
+            <img src="/assets/icons/search_icon.svg" alt="search-logo" />
+          </li>
+          <li><img src="/assets/icons/heart_icon.svg" alt="heart-logo" /></li>
+          <li><img src="/assets/icons/cart_icon.svg" alt="cart-icon" /></li>
+        </ul>
       </div>
     </nav>
     <main>
-      <section></section>
-      <section></section>
-      <section></section>
-      <section></section>
-      <section></section>
+      <section class="hero-parent">
+        <div class="container hero-inner">
+          <div class="hero-container">
+            <div class="hero-container-inner">
+              <p class="hero-subtitle">New Arrival</p>
+              <h2 class="hero-title">Discover Our<br />New Collection</h2>
+              <p class="hero-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                tellus, luctus nec ullamcorper mattis.
+              </p>
+            </div>
+
+            <button class="hero-button">Buy Now</button>
+          </div>
+        </div>
+      </section>
+      <section class="browse-parent">
+        <div class="container browse-inner">
+          <div class="browse-headline">
+            <h3 class="browse-headline-title">Browse The Range</h3>
+            <p class="browse-headline-subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="browse-select">
+            <div class="browse-select-item">
+              <img
+                class="browse-select-item-image"
+                src="/assets/images/browse/dining.png"
+                alt="dining"
+              />
+              <h4 class="browse-select-item-title">Dining</h4>
+            </div>
+            <div class="browse-select-item">
+              <img
+                class="browse-select-item-image"
+                src="/assets/images/browse/living.png"
+                alt="living"
+              />
+              <h4 class="browse-select-item-title">Living</h4>
+            </div>
+            <div class="browse-select-item">
+              <img
+                class="browse-select-item-image"
+                src="/assets/images/browse/bedroom.png"
+                alt="bedroom"
+              />
+              <h4 class="browse-select-item-title">Bedroom</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="products-parent">
+        <div class="container products-inner">
+          <h3 class="products-title">Our Products</h3>
+          <div class="products-list">
+            <div class="product-card">
+              <div class="discount-flag">-30%</div>
+              <img
+                class="product-image"
+                src="/assets/images/products/image 1.png"
+                alt="image-1"
+              />
+              <div class="product-info">
+                <p class="product-info-title">Syltherine</p>
+                <p class="product-info-description">Stylish cafe chair</p>
+                <div class="product-info-pricebox">
+                  <p class="product-info-price">Rp 2.500.000</p>
+                  <p class="product-info-oldprice">Rp 3.500.000</p>
+                </div>
+              </div>
+              <div class="product-overlay">
+                <button class="overlay-button">Add to cart</button>
+                <ul class="overlay-options">
+                  <li class="overlay-option">
+                    <img src="/assets/icons/share_icon.svg" alt="share-icon" />
+                    <p>Share</p>
+                  </li>
+                  <li class="overlay-option">
+                    <img
+                      src="/assets/icons/compare_icon.svg"
+                      alt="compare-icon"
+                    />
+                    <p>Compare</p>
+                  </li>
+                  <li class="overlay-option">
+                    <img
+                      src="/assets/icons/heart_icon_white.svg"
+                      alt="like-icon"
+                    />
+                    <p>Like</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="discount-flag">-30%</div>
+              <img
+                class="product-image"
+                src="/assets/images/products/image 2.png"
+                alt="image-2"
+              />
+              <div class="product-info">
+                <p class="product-info-title">Leviosa</p>
+                <p class="product-info-description">Stylish cafe chair</p>
+                <div class="product-info-pricebox">
+                  <p class="product-info-price">Rp 2.500.000</p>
+                </div>
+              </div>
+              <div class="product-overlay">
+                <button class="overlay-button">Add to cart</button>
+                <ul class="overlay-options">
+                  <li class="overlay-option">
+                    <img src="/assets/icons/share_icon.svg" alt="share-icon" />
+                    <p>Share</p>
+                  </li>
+                  <li class="overlay-option">
+                    <img
+                      src="/assets/icons/compare_icon.svg"
+                      alt="compare-icon"
+                    />
+                    <p>Compare</p>
+                  </li>
+                  <li class="overlay-option">
+                    <img
+                      src="/assets/icons/heart_icon_white.svg"
+                      alt="like-icon"
+                    />
+                    <p>Like</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="discount-flag">-50%</div>
+              <img
+                class="product-image"
+                src="/assets/images/products/image 3.png"
+                alt="image-3"
+              />
+              <div class="product-info">
+                <p class="product-info-title">Lolito</p>
+                <p class="product-info-description">Luxury big sofa</p>
+                <div class="product-info-pricebox">
+                  <p class="product-info-price">Rp 7.000.000</p>
+                  <p class="product-info-oldprice">Rp 14.000.000</p>
+                </div>
+              </div>
+              <div class="product-overlay">
+                <button class="overlay-button">Add to cart</button>
+                <ul class="overlay-options">
+                  <li class="overlay-option">
+                    <img src="/assets/icons/share_icon.svg" alt="share-icon" />
+                    <p>Share</p>
+                  </li>
+                  <li class="overlay-option">
+                    <img
+                      src="/assets/icons/compare_icon.svg"
+                      alt="compare-icon"
+                    />
+                    <p>Compare</p>
+                  </li>
+                  <li class="overlay-option">
+                    <img
+                      src="/assets/icons/heart_icon_white.svg"
+                      alt="like-icon"
+                    />
+                    <p>Like</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="new-flag">New</div>
+              <img
+                class="product-image"
+                src="/assets/images/products/image 4.png"
+                alt="image-4"
+              />
+              <div class="product-info">
+                <p class="product-info-title">Respira</p>
+                <p class="product-info-description">
+                  Outdoor bar table and stool
+                </p>
+                <div class="product-info-pricebox">
+                  <p class="product-info-price">Rp 500.000</p>
+                </div>
+              </div>
+              <div class="product-overlay">
+                <button class="overlay-button">Add to cart</button>
+                <ul class="overlay-options">
+                  <li class="overlay-option">
+                    <img src="/assets/icons/share_icon.svg" alt="share-icon" />
+                    <p>Share</p>
+                  </li>
+                  <li class="overlay-option">
+                    <img
+                      src="/assets/icons/compare_icon.svg"
+                      alt="compare-icon"
+                    />
+                    <p>Compare</p>
+                  </li>
+                  <li class="overlay-option">
+                    <img
+                      src="/assets/icons/heart_icon_white.svg"
+                      alt="like-icon"
+                    />
+                    <p>Like</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-card">
+              <img
+                class="product-image"
+                src="/assets/images/products/image 5.png"
+                alt="image-5"
+              />
+              <div class="product-info">
+                <p class="product-info-title">Grifo</p>
+                <p class="product-info-description">Night lamp</p>
+                <div class="product-info-pricebox">
+                  <p class="product-info-price">Rp 1.500.000</p>
+                </div>
+              </div>
+              <div class="product-overlay">
+                <button class="overlay-button">Add to cart</button>
+                <ul class="overlay-options">
+                  <li class="overlay-option">
+                    <img src="/assets/icons/share_icon.svg" alt="share-icon" />
+                    <p>Share</p>
+                  </li>
+                  <li class="overlay-option">
+                    <img
+                      src="/assets/icons/compare_icon.svg"
+                      alt="compare-icon"
+                    />
+                    <p>Compare</p>
+                  </li>
+                  <li class="overlay-option">
+                    <img
+                      src="/assets/icons/heart_icon_white.svg"
+                      alt="like-icon"
+                    />
+                    <p>Like</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="new-flag">New</div>
+              <img
+                class="product-image"
+                src="/assets/images/products/image 6.png"
+                alt="image-6"
+              />
+              <div class="product-info">
+                <p class="product-info-title">Muggo</p>
+                <p class="product-info-description">Small mug</p>
+                <div class="product-info-pricebox">
+                  <p class="product-info-price">Rp 150.000</p>
+                </div>
+              </div>
+              <div class="product-overlay">
+                <button class="overlay-button">Add to cart</button>
+                <ul class="overlay-options">
+                  <li class="overlay-option">
+                    <img src="/assets/icons/share_icon.svg" alt="share-icon" />
+                    <p>Share</p>
+                  </li>
+                  <li class="overlay-option">
+                    <img
+                      src="/assets/icons/compare_icon.svg"
+                      alt="compare-icon"
+                    />
+                    <p>Compare</p>
+                  </li>
+                  <li class="overlay-option">
+                    <img
+                      src="/assets/icons/heart_icon_white.svg"
+                      alt="like-icon"
+                    />
+                    <p>Like</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="discount-flag">-50%</div>
+              <img
+                class="product-image"
+                src="/assets/images/products/image 7.png"
+                alt="image-7"
+              />
+              <div class="product-info">
+                <p class="product-info-title">Pingky</p>
+                <p class="product-info-description">Cute bed set</p>
+                <div class="product-info-pricebox">
+                  <p class="product-info-price">Rp 7.000.000</p>
+                  <p class="product-info-oldprice">Rp 14.000.000</p>
+                </div>
+              </div>
+              <div class="product-overlay">
+                <button class="overlay-button">Add to cart</button>
+                <ul class="overlay-options">
+                  <li class="overlay-option">
+                    <img src="/assets/icons/share_icon.svg" alt="share-icon" />
+                    <p>Share</p>
+                  </li>
+                  <li class="overlay-option">
+                    <img
+                      src="/assets/icons/compare_icon.svg"
+                      alt="compare-icon"
+                    />
+                    <p>Compare</p>
+                  </li>
+                  <li class="overlay-option">
+                    <img
+                      src="/assets/icons/heart_icon_white.svg"
+                      alt="like-icon"
+                    />
+                    <p>Like</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="new-flag">New</div>
+              <img
+                class="product-image"
+                src="/assets/images/products/image 8.png"
+                alt="image-8"
+              />
+              <div class="product-info">
+                <p class="product-info-title">Potty</p>
+                <p class="product-info-description">Minimalist flower pot</p>
+                <div class="product-info-pricebox">
+                  <p class="product-info-price">Rp 500.000</p>
+                </div>
+              </div>
+              <div class="product-overlay">
+                <button class="overlay-button">Add to cart</button>
+                <ul class="overlay-options">
+                  <li class="overlay-option">
+                    <img src="/assets/icons/share_icon.svg" alt="share-icon" />
+                    <p>Share</p>
+                  </li>
+                  <li class="overlay-option">
+                    <img
+                      src="/assets/icons/compare_icon.svg"
+                      alt="compare-icon"
+                    />
+                    <p>Compare</p>
+                  </li>
+                  <li class="overlay-option">
+                    <img
+                      src="/assets/icons/heart_icon_white.svg"
+                      alt="like-icon"
+                    />
+                    <p>Like</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <button class="products-button">Show More</button>
+        </div>
+      </section>
+      <section>
+        <div></div>
+      </section>
+      <section>
+        <div>
+          <div>
+            <p>Share your setup with</p>
+            <h3>#FurniroFurniture</h3>
+          </div>
+          <div></div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="footer-parent">
+      <div class="footer-inner">
+        <div class="footer-content">
+          <div class="footer-content-first">
+            <h4>Furniro.</h4>
+            <p>400 University Drive Suite 200 Coral Gables,
+              FL 33134 USA</p>
+          </div>
+          <div>
+            <p>Links</p>
+            <ul>
+              <li>Home</li>
+              <li>Shop</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-foot"></div>
+      </div>
+    </footer>
   </body>
 </html>
