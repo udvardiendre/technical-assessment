@@ -29,7 +29,11 @@
           <li><img src="/assets/icons/heart_icon.svg" alt="heart-logo" /></li>
           <li><img src="/assets/icons/cart_icon.svg" alt="cart-icon" /></li>
         </ul>
-        <img src="/assets/icons/hamburger_icon.svg" alt="" class="hamburger-menu">
+        <img
+          src="/assets/icons/hamburger_icon.svg"
+          alt=""
+          class="hamburger-menu"
+        />
       </div>
     </nav>
     <main>
@@ -497,7 +501,7 @@
           <div class="footer-content-column">
             <h4 class="content-first-title">Furniro.</h4>
             <p class="content-first-subtitle">
-              400 University Drive Suite 200 Coral Gables, <br/>FL 33134 USA
+              400 University Drive Suite 200 Coral Gables, <br />FL 33134 USA
             </p>
           </div>
           <div class="footer-content-column">
@@ -531,6 +535,58 @@
         </div>
       </div>
     </footer>
-    <script src="/assets/scripts/main.js"></script>
+    <script>
+      const stack = document.querySelector(".carousel-stack");
+      const cards = Array.from(stack.children);
+      const paginationContainer = document.querySelector(".pagination");
+      const prevBtn = document.querySelector(".nav.prev");
+      const nextBtn = document.querySelector(".nav.next");
+
+      let currentCards = [...cards];
+      const visibleCount = 3;
+
+      function renderCarousel() {
+        stack.innerHTML = "";
+        currentCards.forEach((card, index) => {
+          card.classList.remove("focused");
+          if (index === 0) card.classList.add("focused");
+          stack.appendChild(card);
+        });
+
+        updatePagination();
+      }
+
+      function moveNext() {
+        const first = currentCards.shift();
+        currentCards.push(first);
+        renderCarousel();
+      }
+
+      function movePrev() {
+        const last = currentCards.pop();
+        currentCards.unshift(last);
+        renderCarousel();
+      }
+
+      function updatePagination() {
+        paginationContainer.innerHTML = "";
+        for (let i = 0; i < cards.length; i++) {
+          const dot = document.createElement("div");
+          dot.classList.add("pagination-dot");
+          if (currentCards[0].dataset.index == i) {
+            dot.classList.add("active");
+          }
+          paginationContainer.appendChild(dot);
+        }
+      }
+
+      nextBtn.addEventListener("click", moveNext);
+      prevBtn.addEventListener("click", movePrev);
+
+      window.addEventListener("load", () => {
+        currentCards.forEach((card, i) => (card.dataset.index = i));
+        renderCarousel();
+      });
+    </script>
   </body>
 </html>
