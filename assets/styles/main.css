@@ -294,7 +294,7 @@ body {
 
 .hero-inner {
   height: 100%;
-  margin: -240px auto 120px auto;
+  margin: -140px auto 120px auto;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -352,6 +352,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  white-space: pre;
 }
 
 .hero-button:hover {
@@ -548,7 +549,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 13px;
+  gap: 34px;
 }
 
 .product-card {
@@ -813,7 +814,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: end;
-  margin-top: 16px;
+  margin-top: 150px;
   gap: 16px;
 }
 
@@ -847,7 +848,7 @@ body {
   display: flex;
   align-items: end;
   position: absolute;
-  bottom: 112px;
+  bottom: 12px;
   left: 12px;
 }
 
@@ -928,6 +929,7 @@ body {
   .carousel-controls {
     justify-content: center;
     margin-top: 150px;
+    margin-left: -60px;
   }
 
   .carousel-card.focused {
@@ -1060,6 +1062,7 @@ body {
 .left-block {
   width: 40%;
   display: flex;
+  justify-content: end;
   gap: 20px;
   flex-wrap: wrap;
 }
